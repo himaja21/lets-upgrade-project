@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>myViews</title>
+        <link rel="stylesheet" href="Project.css">
+        <link rel="icon" href="data:image/png;base64,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"/>
+
+    </head>
+        <body>
+            <div class="front">
+              <!-- <h1 class=name>MY VIEWS</h1>-->
+              <div class="head">
+                
+                  
+                  <div class="name">
+                    myViews
+                  </div>
+                  
+                  <div class="options">
+                      <div class="opt_head">
+                    <div class="opt_item">Home</div>
+                    <div class="opt_item">About</div>
+                    <div class="opt_item">Contact</div>
+                    <div class="opt_item">Admin</div>
+                </div>
+
+                  </div>
+
+              </div>
+            
+            </div> 
+            <div class="wall">
+                
+                <div class= overlay>
+                    
+                    <div class=block>
+                        <div class=txt>
+                            <h1 class=h>WELCOME!</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid rerum molestiae quas, eveniet error nemo a sint culpa provident fuga itaque temporibus natus dolore cum adipisci nobis? Itaque, delectus voluptates.</p>
+                            <p>
+                                <button class=btn>START</button>
+                            </p>
+                        </div>
+
+                    </div>
+                    <div class="footer_child footer_child_4">
+                        <div class="container social_container">
+                            <div class="social_icon si1"></div>
+                            <div class="social_icon si2"></div>
+                            <div class="social_icon si3"></div>
+                            <div class="social_icon si4"></div>
+                        </div>
+                </div>
+
+                   
+                    </div> 
+                   
+
+                </div>
+
+            </div>
+            <div class=content>
+                <div class="pp"><h1 class=exp>EXPLORE</h1></div>
+                <div class=oo>
+                <div class="box phto1">
+                    <h2 class=cat>Tips</h2>
+                    <button class=btn1>know</button>
+                </div>
+            
+                    <div class="box phto2">
+                        <h2 class=cat>Edits</h2>
+                        <button class=btn1>know</button>
+                    </div>
+                   
+             
+                    <div class="box phto3">
+                        <h2 class=cat>Cams</h2>
+                        <button class=btn1>know</button>
+                    
+            
+                </div>
+                
+            </div>
+                  
+
+
+            </div>
+            <div class="about">
+                <h1>Wish you like us!</h1>
+                <div class="container about_container">
+                    <span class="start_text">Lorem</span> ipsum dolor, sit amet consectetur adipisicing elit. Sequi a deleniti aperiam neque assumenda nisi animi nesciunt soluta nihil, quaerat vel maxime, cum quae. In nemo quia mollitia ipsa expedita.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi a deleniti aperiam neque assumenda nisi animi nesciunt soluta nihil, quaerat vel maxime, cum quae. In nemo quia mollitia ipsa expedita.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi a deleniti aperiam neque assumenda nisi animi nesciunt soluta nihil, quaerat vel maxime, cum quae. In nemo quia mollitia ipsa expedita.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi a deleniti aperiam neque assumenda nisi animi nesciunt soluta nihil, quaerat vel maxime, cum quae. In nemo quia mollitia ipsa expedita.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi a deleniti aperiam neque assumenda nisi animi nesciunt soluta nihil, quaerat vel maxime, cum quae. In nemo quia mollitia ipsa expedita.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi a deleniti aperiam neque assumenda nisi animi nesciunt soluta nihil, quaerat vel maxime, cum quae. In nemo quia mollitia ipsa expedita.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi a deleniti aperiam neque assumenda nisi animi nesciunt soluta nihil, quaerat vel maxime, cum quae. In nemo quia mollitia ipsa expedita.
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sequi a deleniti aperiam neque assumenda nisi animi nesciunt soluta nihil, quaerat vel maxime, cum quae. In nemo quia mollitia ipsa expedita.
+                </div>
+            </div>
+    
+    
+        
+    
+      
+    
+            <!-- get a quote  -->
+    
+            <div class="quote">
+                <div class="container quote_container">
+                    <h1 class="quote_title">See our Work</h1>
+                    <p>
+                        <button class="quote_btn">Get Featured Photos</button>
+                    </p>
+                </div>
+            </div>
+    
+            <!-- css for portfolio  -->
+            <div class="portfolio">
+                <div class="container portfolio_container">
+                    <div class="project project_1">
+                        <div class="project_title">
+                            <h1>Nature</h1>
+                        </div>
+                    </div>
+                    <div class="project project_2">
+                        <div class="project_title">
+                            <h1>Street</h1>
+                        </div>
+                    </div>
+                    <div class="project project_3">
+                        <div class="project_title">
+                            <h1>Portraits</h1>
+                        </div>
+                    </div>
+                    <div class="project project_4">
+                        <div class="project_title">
+                            <h1>Lights</h1>
+                        </div>
+                    </div>
+                    <div class="project project_5">
+                        <div class="project_title">
+                            <h1>Landscapes</h1>
+                        </div>
+                    </div>
+                    <div class="project project_6">
+                        <div class="project_title">
+                            <h1>Automobiles</h1>
+                        </div>
+                    </div>
+                    <div class="project project_7">
+                        <div class="project_title">
+                            <h1>Rain</h1>
+                        </div>
+                    </div>
+                    <div class="project project_8">
+                        <div class="project_title">
+                            <h1>Food</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <!-- css for footer  -->
+    
+            <div class="footer">
+                <div class="container footer_container">
+                    <div class="footer_child footer_child_1">
+                        <h1 class="footer_logo">myViews</h1>
+                    </div>
+                    <div class="footer_child">
+                        <ul>
+                            <li class="first">Quick Links</li>
+                            <li>Home</li>
+                            <li>Services</li>
+                            <li>About</li>
+                            <li>Contact</li>
+                        </ul>
+                    </div>
+                    <div class="footer_child">
+                        <ul>
+                            <li class="first">Contact Us</li>
+                            <li>
+                                Street no.3, plot 304,
+                                Delhi, India.
+                            </li>
+                            <li>743957439</li>
+                            <li>info@myviews.com</li>
+    
+                        </ul>
+                    </div>
+                   
+                </div>
+            </div>
+    
+            <script>
+    
+                window.onscroll=function(){
+                    if(window.pageYOffset>100){
+                        document.getElementById('header').style.backgroundColor="rgba(16, 128, 234, 1)";
+                    }
+                    else {
+                        document.getElementById('header').style.backgroundColor="transparent";
+                    }   
+                }
+    
+    
+    
+            </script>
+            
+
+        </body>
+    
+</html>
